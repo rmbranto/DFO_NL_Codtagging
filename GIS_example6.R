@@ -1,10 +1,34 @@
 # RMBranto: Oct 2015
+<<<<<<< HEAD
+# May 2016 - testing
+=======
+>>>>>>> 5967528bdd0709280d212249fc688ecb60503311
 
 # create recapture points layers for GIS based analysis
 
 #m<-read.delim("~/Downloads/dwca-dfo_nl_codtagging-v1/measurementorfact.txt",as.is=T)
 #m<-read.csv("NL_Cod_Tagging_Facts.csv",as.is=T)[,2:9]
 #save(m,file='measurementorfact.RData')
+<<<<<<< HEAD
+#o<-read.delim("~/Downloads/dwca-dfo_nl_codtagging-v1-2/occurrence.txt",as.is=T)
+#save(o,file='occurrence.RData')
+
+#install.packages(c("shape", "files"))library(shapefiles)
+library(marmap)
+#install.packages("geosphere")
+library(geosphere)
+#install.packages("maps")
+library(maps)
+
+setwd("/Users/robertbrantonMBPro/Desktop/DFO_NL_Codtagging")
+
+source('functions2.R')
+load('measurementorfact.RData')
+load('occurrence.RData')
+local.names=read.csv("localNames.csv",as.is=T)[,c(1,2,3,5)]
+
+setwd("/Users/robertbrantonMBPro/Desktop/scratch")
+=======
 #o<-read.delim("~/Downloads/dwca-dfo_nl_codtagging-v1/occurrence.txt",as.is=T)
 #save(o,file='occurrence.RData')
 
@@ -17,6 +41,7 @@ source('functions2.R')
 
 load('measurementorfact.RData')
 load('occurrence.RData')
+>>>>>>> 5967528bdd0709280d212249fc688ecb60503311
 
 # merge occurrence and measurement data
 #######################################
@@ -118,7 +143,11 @@ make.shapefile(f.line(sl),sl[,c('Id','experiment','sDate','yearsFree','season','
 ####################
 
 e<-merge(
+<<<<<<< HEAD
+  x=local.names,
+=======
   x=read.csv("localNames.csv",as.is=T)[,c(1,2,3,5)],
+>>>>>>> 5967528bdd0709280d212249fc688ecb60503311
   y=aggregate(
     cbind(releases=ifelse(occurrenceRemarks=='Tagged animal released',1,0),
           recaptures=ifelse(occurrenceRemarks=='Tagged animal recaptured',1,0))~eventID,
