@@ -1,6 +1,6 @@
 # RMBranto: Oct 2015
 <<<<<<< HEAD
-# May 2016 - testing
+# May 29 2016 - testing
 =======
 >>>>>>> 5967528bdd0709280d212249fc688ecb60503311
 
@@ -13,8 +13,10 @@
 #o<-read.delim("~/Downloads/dwca-dfo_nl_codtagging-v1-2/occurrence.txt",as.is=T)
 #save(o,file='occurrence.RData')
 
-#install.packages(c("shape", "files"))library(shapefiles)
+#install.packages("marmap")
 library(marmap)
+#install.packages("shapefiles")
+library(shapefiles)
 #install.packages("geosphere")
 library(geosphere)
 #install.packages("maps")
