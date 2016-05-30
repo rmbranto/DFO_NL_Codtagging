@@ -1,4 +1,4 @@
 # DFO_NL_Codtagging
 DFO  Newfoundland cod-tagging database 1954-1993
 
-Tag and recapture information on cod marked with unique numbered plastic tags. Purpose of the project was for cod stock assessment and research This dataset is the OBIS version of the cod tagging database records. The dataset contains the release and the recapture locations for the tagged fish.
+R code to read OBIS Canada Integrated Publishing Toolkit (IPT) version of Newfoundland 1954-93 cod-tagging database (http://ipt.iobis.org/obiscanada/resource?r=dfo_nl_codtagging) and write ESRI shapefiles & comma separated variables (.csv) files suitable for visualization by QGIS and ARGIS Online (http://arcg.is/20QbFig).  
